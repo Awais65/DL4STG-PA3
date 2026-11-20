@@ -1,0 +1,96 @@
+{
+  "week_plot_sensors": [
+    49,
+    137,
+    305
+  ],
+  "graph": {
+    "nodes": 716,
+    "nonzero_entries_incl_diag": 18035,
+    "self_loops": 716,
+    "directed_edges_excl_self": 17319,
+    "symmetric_values": false,
+    "asymmetric_pairs": 3711,
+    "reciprocal_pairs": 6804,
+    "max_abs_A_minus_AT": 0.9999998807907104,
+    "weight_range": [
+      0.01000183541327715,
+      0.9999998807907104
+    ],
+    "out_degree": {
+      "min": 0,
+      "mean": 24.18854748603352,
+      "median": 20.0,
+      "max": 70
+    },
+    "in_degree": {
+      "min": 0,
+      "mean": 24.18854748603352,
+      "max": 68
+    },
+    "isolated_nodes": 3,
+    "density": 0.033830136344102826,
+    "geo_km_of_edges": {
+      "median": 2.371061186383964,
+      "p95": 3.829878868107618,
+      "max": 4.010352160147105,
+      "corr_weight_vs_geo": -0.3784735029810107
+    },
+    "same_direction_edge_frac": 0.3054448871181939,
+    "same_freeway_edge_frac": 0.22328078988394248,
+    "corr_intraday_anomaly_adjacent_mean": 0.5432417392730713,
+    "corr_intraday_anomaly_nonadjacent_mean": 0.47288066148757935,
+    "corr_anomaly_15min_change_adjacent_mean": 0.1883893460035324,
+    "corr_anomaly_15min_change_nonadjacent_mean": 0.06127416342496872
+  },
+  "neighbourhood": {
+    "sensor_idx": 687,
+    "sensor_id": 1108764,
+    "fwy": "I805-S",
+    "one_hop": 20,
+    "two_hop_total": 63,
+    "two_hop_only": 43,
+    "one_hop_ids": [
+      1108410,
+      1108413,
+      1108452,
+      1108498,
+      1108580,
+      1108653,
+      1111553,
+      1113473,
+      1114141,
+      1114166,
+      1115964,
+      1118552,
+      1118562,
+      1118567,
+      1121771,
+      1123088,
+      1125912,
+      1126175,
+      1126184,
+      1126319
+    ],
+    "one_hop_freeways": {
+      "I805-N": 9,
+      "SR52-W": 4,
+      "I805-S": 3,
+      "I5-S": 2,
+      "SR52-E": 2
+    },
+    "two_hop_only_freeways": {
+      "I5-N": 11,
+      "I5-S": 9,
+      "I805-S": 9,
+      "I805-N": 5,
+      "SR52-W": 4,
+      "SR52-E": 2,
+      "SR163-N": 2,
+      "SR163-S": 1
+    },
+    "median_anomaly_corr_one_hop": 0.4571459202386443,
+    "median_anomaly_corr_two_hop_only": 0.4882363601068602,
+    "median_anomaly_corr_beyond": 0.47933327761825634
+  }
+}

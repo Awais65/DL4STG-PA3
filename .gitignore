@@ -1,0 +1,11 @@
+data/
+results/*.pt
+results/*_test_pred.npy
+results/*_A_adaptive.npy
+__pycache__/
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+*.pdf
+!report/report.pdf

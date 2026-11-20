@@ -1,0 +1,8 @@
+Q2(a)i  least squares: a=0.0000, b=0.5000, SSE=0.5000
+        preds at 19,20,21: [0.5 0.  0.5], targets: [1. 0. 0.]
+Q2(a)ii t=20  symmetric: peak=0.405 at 20, centre of mass=20.00, mass=5.013
+        t=20  true:      peak=1.000 at 0, mass=5.013
+Q2(b)   a=0.0, w-=0.0, w+=1.0: exact on 100 random snapshots; Conv1d kernel [0,0,1] + circular padding verified
+Q2(c)   a=0.0, b=1.0, c=-1.0: exact for backward motion on 100 random pairs: True
+Q2(c)   a=0.0, b=1.0, c=-1.0: exact for forward motion on 100 random pairs: True
+        bump rollout (20 steps) max |error| vs truth: 2.96e-17

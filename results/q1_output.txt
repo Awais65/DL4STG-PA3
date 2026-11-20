@@ -1,0 +1,16 @@
+Q1(a)
+  N=[-1, 1, 0, 0, -1]: n_v=5, S_v=-1, steady=2
+  N=[-1, 0, 0, 0, 0]: n_v=5, S_v=-1, steady=4
+  aggregated messages identical for random (w, c) -> any rho gives the same h_v
+Q1(b)
+  K=8: phi(-1)=1, phi(0)=9, phi(+1)=81 (base 9)
+  verified 164 count triples: all sums distinct and decoded exactly
+  phi(x)=x^2 (equivalently |x|) sums to #non-steady for every neighbourhood
+Q1(c)
+  task                     sum  mean   max
+     mean counter-example: [0] -> 1 vs [0, 0] -> 2, agg=(np.float64(0.0), np.float64(1.0), np.float64(0.0))
+     max  counter-example: [0] -> 1 vs [0, 0] -> 2, agg=(np.int64(0), np.int64(1), np.int64(0))
+  (i) count steady         Yes    No    No
+     max  counter-example: [-1, 1] -> False vs [-1, -1, 1] -> True, agg=(np.int64(1), np.int64(0), np.int64(1))
+  (ii) >half slowing       Yes   Yes    No
+  (iii) any slowing        Yes   Yes   Yes
