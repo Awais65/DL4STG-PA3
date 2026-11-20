@@ -37,11 +37,11 @@ def table(suffix=""):
     return pd.DataFrame(rows)
 
 
-def pred_vs_actual(times, flow, obs, test_lo):
+def pred_vs_actual(times, flow, obs, test_lo, suffix=""):
     sensors = [49, 137, 305]
     week = (times >= "2021-05-03") & (times < "2021-05-10")
-    preds = {tag: np.load(os.path.join(RES, f"{tag}_test_pred.npy")) for tag, *_ in MODELS
-             if os.path.exists(os.path.join(RES, f"{tag}_test_pred.npy"))}
+    preds = {tag: np.load(os.path.join(RES, f"{tag}{suffix}_test_pred.npy")) for tag, *_ in MODELS
+             if os.path.exists(os.path.join(RES, f"{tag}{suffix}_test_pred.npy"))}
     meta = pd.read_csv(os.path.join(PROC, "sd_meta.csv"))
     colors = {"none": "tab:gray", "fixed": "tab:blue", "adaptive": "tab:orange", "hybrid": "tab:green"}
     for h, hname in ((0, "15 min"), (3, "60 min")):
@@ -55,10 +55,10 @@ def pred_vs_actual(times, flow, obs, test_lo):
                 ok = (k >= 0) & (k < len(P))
                 lab = dict((t, f"{m} ({a})") for t, m, a in MODELS)[tag]
                 ax.plot(times[tidx][ok], P[k[ok], h, j], lw=1, color=colors[tag], label=lab, alpha=.9)
-            ax.set_title(f"sensor {meta.ID[j]} ({meta.Fwy[j]}), horizon {hname}")
+            ax.set_title(f"sensor {meta.ID[j]} ({meta.Fwy[j]}), horizon {hname}" + (" - with skip connection" if suffix else ""))
             ax.set_ylabel("veh / 15 min"); ax.grid(alpha=.3)
         axes[0].legend(ncol=5, fontsize=8, loc="upper right")
-        fig.savefig(os.path.join(FIG, f"q6a_pred_vs_actual_h{h + 1}.png"), dpi=150, bbox_inches="tight")
+        fig.savefig(os.path.join(FIG, f"q6a_pred_vs_actual{suffix}_h{h + 1}.png"), dpi=150, bbox_inches="tight")
         plt.close(fig)
 
 
@@ -165,6 +165,7 @@ def main():
             t.to_csv(os.path.join(RES, f"table_{name}.csv"), index=False)
             print(f"\n== {name}\n", t.round(3).to_string(index=False))
     pred_vs_actual(times, flow, obs, test_lo)
+    pred_vs_actual(times, flow, obs, test_lo, suffix="_res")
     training_curves()
     A = np.load(os.path.join(PROC, "adj_sd.npy"))
     geo = np.load(os.path.join(PROC, "geo_km.npy"))

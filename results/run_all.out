@@ -1,31 +1,423 @@
 [none] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
 [none] trainable parameters: 9604
-[none] ep   1 train 94.706 val MAE 61.513 RMSE 99.426 (9.5s)
-[none] ep   2 train 60.347 val MAE 64.033 RMSE 100.523 (8.9s)
-[none] ep   3 train 59.276 val MAE 59.785 RMSE 96.708 (9.0s)
-[none] ep   4 train 58.628 val MAE 62.529 RMSE 99.168 (8.8s)
-[none] ep   5 train 58.096 val MAE 59.251 RMSE 96.092 (8.8s)
-[none] ep   6 train 57.895 val MAE 59.170 RMSE 94.906 (8.8s)
-[none] ep   7 train 57.629 val MAE 58.554 RMSE 94.803 (8.8s)
-[none] ep   8 train 57.635 val MAE 60.079 RMSE 96.817 (8.8s)
-[none] ep   9 train 57.287 val MAE 58.312 RMSE 94.258 (8.8s)
-[none] ep  10 train 56.993 val MAE 58.480 RMSE 94.391 (8.4s)
-[none] ep  11 train 56.928 val MAE 58.846 RMSE 95.024 (8.2s)
-[none] ep  12 train 56.979 val MAE 58.885 RMSE 95.602 (8.3s)
-[none] ep  13 train 56.672 val MAE 58.354 RMSE 94.050 (8.7s)
-[none] ep  14 train 56.152 val MAE 57.548 RMSE 92.788 (8.6s)
-[none] ep  15 train 56.059 val MAE 58.241 RMSE 94.455 (8.5s)
-[none] ep  16 train 56.018 val MAE 57.468 RMSE 92.845 (8.3s)
-[none] ep  17 train 55.930 val MAE 58.142 RMSE 93.822 (8.2s)
-[none] ep  18 train 55.854 val MAE 57.454 RMSE 92.956 (8.2s)
-[none] ep  19 train 55.848 val MAE 57.637 RMSE 92.593 (8.2s)
-[none] ep  20 train 55.753 val MAE 57.759 RMSE 92.844 (8.3s)
-[none] ep  21 train 55.755 val MAE 57.341 RMSE 92.412 (8.2s)
-[none] ep  22 train 55.736 val MAE 57.165 RMSE 92.299 (8.2s)
-[none] ep  23 train 55.655 val MAE 57.298 RMSE 92.169 (8.2s)
-[none] ep  24 train 55.574 val MAE 57.027 RMSE 92.016 (8.2s)
-[none] ep  25 train 55.523 val MAE 57.517 RMSE 93.269 (8.2s)
-[none] ep  26 train 55.476 val MAE 57.247 RMSE 92.339 (8.2s)
-[none] ep  27 train 55.504 val MAE 57.751 RMSE 92.839 (8.4s)
-[none] ep  28 train 55.417 val MAE 57.082 RMSE 92.277 (8.4s)
-[none] ep  29 train 55.150 val MAE 56.759 RMSE 91.910 (9.1s)
+[none] ep   1 train 94.706 val MAE 61.513 RMSE 99.426 (6.8s)
+[none] ep   2 train 60.347 val MAE 64.033 RMSE 100.523 (6.0s)
+[none] ep   3 train 59.276 val MAE 59.785 RMSE 96.708 (6.0s)
+[none] ep   4 train 58.628 val MAE 62.529 RMSE 99.168 (6.0s)
+[none] ep   5 train 58.096 val MAE 59.251 RMSE 96.092 (5.9s)
+[none] ep   6 train 57.895 val MAE 59.170 RMSE 94.906 (6.0s)
+[none] ep   7 train 57.629 val MAE 58.554 RMSE 94.803 (6.0s)
+[none] ep   8 train 57.635 val MAE 60.079 RMSE 96.817 (6.0s)
+[none] ep   9 train 57.287 val MAE 58.312 RMSE 94.258 (5.9s)
+[none] ep  10 train 56.993 val MAE 58.480 RMSE 94.391 (5.9s)
+[none] ep  11 train 56.928 val MAE 58.846 RMSE 95.024 (5.9s)
+[none] ep  12 train 56.979 val MAE 58.885 RMSE 95.602 (5.9s)
+[none] ep  13 train 56.672 val MAE 58.354 RMSE 94.050 (6.0s)
+[none] ep  14 train 56.152 val MAE 57.548 RMSE 92.788 (6.1s)
+[none] ep  15 train 56.059 val MAE 58.241 RMSE 94.455 (6.1s)
+[none] ep  16 train 56.018 val MAE 57.468 RMSE 92.845 (6.2s)
+[none] ep  17 train 55.930 val MAE 58.142 RMSE 93.822 (6.2s)
+[none] ep  18 train 55.854 val MAE 57.454 RMSE 92.956 (6.2s)
+[none] ep  19 train 55.848 val MAE 57.637 RMSE 92.593 (6.2s)
+[none] ep  20 train 55.753 val MAE 57.759 RMSE 92.844 (6.3s)
+[none] ep  21 train 55.755 val MAE 57.341 RMSE 92.412 (6.3s)
+[none] ep  22 train 55.736 val MAE 57.165 RMSE 92.299 (6.3s)
+[none] ep  23 train 55.655 val MAE 57.298 RMSE 92.169 (6.4s)
+[none] ep  24 train 55.574 val MAE 57.027 RMSE 92.016 (6.3s)
+[none] ep  25 train 55.523 val MAE 57.517 RMSE 93.269 (6.3s)
+[none] ep  26 train 55.476 val MAE 57.247 RMSE 92.339 (6.4s)
+[none] ep  27 train 55.504 val MAE 57.751 RMSE 92.839 (6.3s)
+[none] ep  28 train 55.417 val MAE 57.082 RMSE 92.277 (6.4s)
+[none] ep  29 train 55.150 val MAE 56.759 RMSE 91.910 (6.3s)
+[none] ep  30 train 55.138 val MAE 56.800 RMSE 91.889 (6.4s)
+[none] ep  31 train 55.166 val MAE 56.862 RMSE 91.775 (6.4s)
+[none] ep  32 train 55.120 val MAE 56.616 RMSE 91.526 (6.6s)
+[none] ep  33 train 55.101 val MAE 56.598 RMSE 91.539 (6.5s)
+[none] ep  34 train 55.140 val MAE 56.585 RMSE 91.379 (6.4s)
+[none] ep  35 train 55.057 val MAE 57.057 RMSE 91.481 (6.5s)
+[none] ep  36 train 55.029 val MAE 56.534 RMSE 91.350 (6.5s)
+[none] ep  37 train 55.002 val MAE 56.540 RMSE 91.519 (6.5s)
+[none] ep  38 train 54.989 val MAE 56.411 RMSE 91.166 (6.5s)
+[none] ep  39 train 55.000 val MAE 56.535 RMSE 91.260 (6.6s)
+[none] ep  40 train 54.974 val MAE 57.172 RMSE 91.716 (6.5s)
+[none] ep  41 train 54.960 val MAE 56.590 RMSE 91.595 (6.6s)
+[none] ep  42 train 54.934 val MAE 56.657 RMSE 91.487 (6.6s)
+[none] ep  43 train 54.789 val MAE 56.404 RMSE 91.084 (6.6s)
+[none] ep  44 train 54.762 val MAE 56.320 RMSE 90.952 (6.6s)
+[none] ep  45 train 54.790 val MAE 56.498 RMSE 91.335 (6.6s)
+[none] ep  46 train 54.774 val MAE 56.198 RMSE 90.932 (6.6s)
+[none] ep  47 train 54.757 val MAE 56.317 RMSE 90.893 (6.6s)
+[none] ep  48 train 54.759 val MAE 56.400 RMSE 91.102 (6.6s)
+[none] ep  49 train 54.760 val MAE 56.282 RMSE 90.936 (6.7s)
+[none] ep  50 train 54.749 val MAE 56.271 RMSE 90.886 (6.7s)
+[none] DONE  val MAE 56.198 RMSE 90.932 | test MAE 64.751 RMSE 102.403 | time 316.4s
+[fixed] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
+[fixed] trainable parameters: 9604
+[fixed] ep   1 train 161.559 val MAE 139.847 RMSE 211.873 (6.7s)
+[fixed] ep   2 train 136.552 val MAE 139.282 RMSE 210.844 (6.3s)
+[fixed] ep   3 train 135.241 val MAE 138.036 RMSE 210.727 (6.4s)
+[fixed] ep   4 train 133.197 val MAE 135.043 RMSE 208.012 (6.5s)
+[fixed] ep   5 train 131.843 val MAE 134.719 RMSE 207.188 (6.5s)
+[fixed] ep   6 train 130.696 val MAE 133.523 RMSE 207.751 (6.6s)
+[fixed] ep   7 train 129.879 val MAE 134.183 RMSE 210.092 (6.6s)
+[fixed] ep   8 train 129.388 val MAE 132.048 RMSE 206.931 (6.6s)
+[fixed] ep   9 train 128.339 val MAE 131.922 RMSE 206.451 (6.7s)
+[fixed] ep  10 train 127.995 val MAE 131.022 RMSE 205.611 (6.7s)
+[fixed] ep  11 train 127.529 val MAE 130.660 RMSE 206.657 (6.7s)
+[fixed] ep  12 train 126.943 val MAE 130.058 RMSE 205.745 (6.8s)
+[fixed] ep  13 train 126.771 val MAE 129.731 RMSE 205.514 (6.7s)
+[fixed] ep  14 train 126.461 val MAE 129.873 RMSE 205.348 (6.7s)
+[fixed] ep  15 train 126.243 val MAE 129.686 RMSE 205.909 (6.8s)
+[fixed] ep  16 train 125.978 val MAE 129.334 RMSE 205.323 (6.8s)
+[fixed] ep  17 train 125.608 val MAE 129.378 RMSE 204.878 (6.8s)
+[fixed] ep  18 train 125.719 val MAE 128.426 RMSE 205.082 (6.8s)
+[fixed] ep  19 train 125.479 val MAE 128.341 RMSE 204.655 (6.7s)
+[fixed] ep  20 train 125.276 val MAE 129.211 RMSE 205.547 (6.7s)
+[fixed] ep  21 train 125.114 val MAE 128.200 RMSE 204.635 (6.7s)
+[fixed] ep  22 train 125.036 val MAE 127.874 RMSE 203.853 (6.7s)
+[fixed] ep  23 train 124.702 val MAE 128.050 RMSE 205.306 (6.8s)
+[fixed] ep  24 train 124.655 val MAE 127.993 RMSE 204.487 (6.7s)
+[fixed] ep  25 train 124.480 val MAE 127.938 RMSE 204.960 (6.8s)
+[fixed] ep  26 train 124.289 val MAE 129.091 RMSE 205.980 (6.8s)
+[fixed] ep  27 train 123.817 val MAE 127.828 RMSE 204.113 (6.8s)
+[fixed] ep  28 train 123.652 val MAE 127.850 RMSE 205.205 (6.9s)
+[fixed] ep  29 train 123.547 val MAE 127.196 RMSE 204.180 (6.8s)
+[fixed] ep  30 train 123.549 val MAE 126.900 RMSE 203.461 (6.8s)
+[fixed] ep  31 train 123.575 val MAE 126.782 RMSE 203.629 (6.8s)
+[fixed] ep  32 train 123.371 val MAE 127.248 RMSE 203.838 (6.7s)
+[fixed] ep  33 train 123.351 val MAE 126.713 RMSE 203.221 (6.7s)
+[fixed] ep  34 train 123.248 val MAE 127.078 RMSE 204.130 (6.7s)
+[fixed] ep  35 train 123.147 val MAE 126.585 RMSE 203.168 (6.8s)
+[fixed] ep  36 train 123.097 val MAE 126.847 RMSE 203.809 (6.8s)
+[fixed] ep  37 train 123.040 val MAE 126.412 RMSE 203.204 (6.8s)
+[fixed] ep  38 train 122.976 val MAE 127.301 RMSE 204.030 (6.8s)
+[fixed] ep  39 train 122.954 val MAE 126.568 RMSE 203.491 (6.8s)
+[fixed] ep  40 train 122.944 val MAE 126.178 RMSE 202.886 (6.8s)
+[fixed] ep  41 train 122.921 val MAE 126.833 RMSE 203.907 (6.8s)
+[fixed] ep  42 train 122.882 val MAE 126.743 RMSE 203.720 (6.8s)
+[fixed] ep  43 train 122.775 val MAE 126.782 RMSE 203.751 (6.8s)
+[fixed] ep  44 train 122.727 val MAE 129.651 RMSE 208.403 (6.8s)
+[fixed] ep  45 train 122.480 val MAE 126.036 RMSE 203.185 (6.8s)
+[fixed] ep  46 train 122.365 val MAE 126.121 RMSE 202.766 (6.8s)
+[fixed] ep  47 train 122.393 val MAE 125.904 RMSE 202.469 (6.8s)
+[fixed] ep  48 train 122.356 val MAE 126.062 RMSE 202.386 (6.8s)
+[fixed] ep  49 train 122.262 val MAE 125.811 RMSE 202.703 (6.9s)
+[fixed] ep  50 train 122.268 val MAE 126.067 RMSE 202.894 (6.8s)
+[fixed] DONE  val MAE 125.811 RMSE 202.703 | test MAE 142.193 RMSE 221.796 | time 337.1s
+[adaptive] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
+[adaptive] trainable parameters: 23924
+[adaptive] ep   1 train 187.457 val MAE 123.853 RMSE 187.041 (6.9s)
+[adaptive] ep   2 train 107.942 val MAE 106.066 RMSE 165.836 (6.7s)
+[adaptive] ep   3 train 91.682 val MAE 90.366 RMSE 142.813 (6.9s)
+[adaptive] ep   4 train 82.977 val MAE 87.555 RMSE 136.657 (7.0s)
+[adaptive] ep   5 train 78.680 val MAE 83.848 RMSE 132.677 (7.0s)
+[adaptive] ep   6 train 75.673 val MAE 81.102 RMSE 130.857 (7.0s)
+[adaptive] ep   7 train 74.093 val MAE 79.430 RMSE 129.228 (7.2s)
+[adaptive] ep   8 train 72.391 val MAE 78.080 RMSE 127.437 (7.1s)
+[adaptive] ep   9 train 70.888 val MAE 77.232 RMSE 127.480 (7.2s)
+[adaptive] ep  10 train 69.027 val MAE 74.784 RMSE 124.638 (7.1s)
+[adaptive] ep  11 train 67.557 val MAE 74.545 RMSE 125.158 (7.1s)
+[adaptive] ep  12 train 66.507 val MAE 73.873 RMSE 122.816 (7.1s)
+[adaptive] ep  13 train 65.834 val MAE 73.366 RMSE 122.074 (7.2s)
+[adaptive] ep  14 train 65.402 val MAE 73.122 RMSE 122.631 (7.2s)
+[adaptive] ep  15 train 65.061 val MAE 72.672 RMSE 122.568 (7.2s)
+[adaptive] ep  16 train 64.483 val MAE 72.402 RMSE 122.115 (7.2s)
+[adaptive] ep  17 train 64.030 val MAE 71.672 RMSE 120.942 (7.2s)
+[adaptive] ep  18 train 63.680 val MAE 71.266 RMSE 120.484 (7.3s)
+[adaptive] ep  19 train 63.322 val MAE 71.320 RMSE 120.891 (7.3s)
+[adaptive] ep  20 train 62.828 val MAE 71.845 RMSE 119.835 (7.3s)
+[adaptive] ep  21 train 62.456 val MAE 70.228 RMSE 119.182 (7.3s)
+[adaptive] ep  22 train 62.187 val MAE 69.253 RMSE 118.145 (7.2s)
+[adaptive] ep  23 train 61.425 val MAE 68.905 RMSE 117.129 (7.3s)
+[adaptive] ep  24 train 60.774 val MAE 69.031 RMSE 117.844 (7.3s)
+[adaptive] ep  25 train 60.638 val MAE 68.860 RMSE 117.649 (7.1s)
+[adaptive] ep  26 train 60.331 val MAE 69.084 RMSE 117.497 (7.2s)
+[adaptive] ep  27 train 60.218 val MAE 71.473 RMSE 118.021 (7.2s)
+[adaptive] ep  28 train 60.053 val MAE 68.222 RMSE 116.465 (7.1s)
+[adaptive] ep  29 train 59.663 val MAE 67.469 RMSE 115.433 (7.1s)
+[adaptive] ep  30 train 59.587 val MAE 66.977 RMSE 114.373 (7.2s)
+[adaptive] ep  31 train 59.415 val MAE 67.609 RMSE 115.245 (7.1s)
+[adaptive] ep  32 train 59.065 val MAE 67.210 RMSE 114.564 (7.1s)
+[adaptive] ep  33 train 58.968 val MAE 66.378 RMSE 114.022 (7.2s)
+[adaptive] ep  34 train 59.048 val MAE 67.070 RMSE 114.754 (7.3s)
+[adaptive] ep  35 train 58.759 val MAE 66.604 RMSE 113.579 (7.2s)
+[adaptive] ep  36 train 58.543 val MAE 66.230 RMSE 113.079 (7.2s)
+[adaptive] ep  37 train 58.333 val MAE 68.445 RMSE 113.973 (7.2s)
+[adaptive] ep  38 train 58.244 val MAE 66.792 RMSE 113.390 (7.2s)
+[adaptive] ep  39 train 58.097 val MAE 66.168 RMSE 113.406 (7.2s)
+[adaptive] ep  40 train 58.048 val MAE 66.357 RMSE 112.454 (7.2s)
+[adaptive] ep  41 train 57.965 val MAE 65.569 RMSE 113.068 (7.2s)
+[adaptive] ep  42 train 57.768 val MAE 66.468 RMSE 114.466 (7.2s)
+[adaptive] ep  43 train 57.554 val MAE 65.789 RMSE 113.052 (7.2s)
+[adaptive] ep  44 train 57.345 val MAE 66.333 RMSE 113.209 (7.2s)
+[adaptive] ep  45 train 57.352 val MAE 65.503 RMSE 113.072 (7.2s)
+[adaptive] ep  46 train 57.285 val MAE 65.751 RMSE 113.592 (7.2s)
+[adaptive] ep  47 train 57.187 val MAE 65.790 RMSE 113.222 (7.2s)
+[adaptive] ep  48 train 57.034 val MAE 65.110 RMSE 112.528 (7.2s)
+[adaptive] ep  49 train 57.029 val MAE 66.112 RMSE 112.876 (7.2s)
+[adaptive] ep  50 train 56.923 val MAE 65.523 RMSE 112.702 (7.4s)
+[adaptive] DONE  val MAE 65.110 RMSE 112.528 | test MAE 79.747 RMSE 127.708 | time 358.8s
+[hybrid] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
+[hybrid] trainable parameters: 23925
+[hybrid] ep   1 train 159.425 val MAE 108.566 RMSE 168.100 (7.2s) lam=0.560
+[hybrid] ep   2 train 97.626 val MAE 97.984 RMSE 155.547 (7.0s) lam=0.547
+[hybrid] ep   3 train 91.009 val MAE 93.525 RMSE 147.758 (7.2s) lam=0.533
+[hybrid] ep   4 train 83.766 val MAE 90.048 RMSE 139.043 (7.2s) lam=0.495
+[hybrid] ep   5 train 79.071 val MAE 84.023 RMSE 131.136 (7.2s) lam=0.467
+[hybrid] ep   6 train 74.166 val MAE 79.332 RMSE 126.410 (7.4s) lam=0.438
+[hybrid] ep   7 train 71.258 val MAE 76.188 RMSE 123.639 (7.4s) lam=0.419
+[hybrid] ep   8 train 69.324 val MAE 77.279 RMSE 125.034 (7.4s) lam=0.412
+[hybrid] ep   9 train 68.737 val MAE 77.338 RMSE 124.063 (7.5s) lam=0.408
+[hybrid] ep  10 train 67.852 val MAE 77.202 RMSE 125.213 (7.5s) lam=0.407
+[hybrid] ep  11 train 67.271 val MAE 74.881 RMSE 120.766 (7.4s) lam=0.405
+[hybrid] ep  12 train 66.408 val MAE 75.226 RMSE 122.121 (7.4s) lam=0.402
+[hybrid] ep  13 train 66.055 val MAE 72.882 RMSE 118.587 (7.4s) lam=0.397
+[hybrid] ep  14 train 65.250 val MAE 71.998 RMSE 118.509 (7.4s) lam=0.394
+[hybrid] ep  15 train 64.594 val MAE 74.000 RMSE 120.152 (7.5s) lam=0.390
+[hybrid] ep  16 train 63.985 val MAE 70.872 RMSE 117.667 (7.5s) lam=0.386
+[hybrid] ep  17 train 63.910 val MAE 70.652 RMSE 117.975 (7.4s) lam=0.382
+[hybrid] ep  18 train 63.299 val MAE 70.294 RMSE 117.326 (7.4s) lam=0.380
+[hybrid] ep  19 train 62.928 val MAE 69.098 RMSE 115.593 (7.3s) lam=0.378
+[hybrid] ep  20 train 62.671 val MAE 70.313 RMSE 116.806 (7.4s) lam=0.377
+[hybrid] ep  21 train 62.337 val MAE 70.669 RMSE 117.747 (7.4s) lam=0.376
+[hybrid] ep  22 train 62.316 val MAE 68.071 RMSE 114.241 (7.3s) lam=0.375
+[hybrid] ep  23 train 62.207 val MAE 68.608 RMSE 115.396 (7.3s) lam=0.374
+[hybrid] ep  24 train 61.778 val MAE 69.113 RMSE 115.891 (7.3s) lam=0.373
+[hybrid] ep  25 train 61.745 val MAE 68.393 RMSE 113.785 (7.3s) lam=0.371
+[hybrid] ep  26 train 61.434 val MAE 67.465 RMSE 113.641 (7.3s) lam=0.372
+[hybrid] ep  27 train 61.341 val MAE 67.887 RMSE 113.930 (7.3s) lam=0.370
+[hybrid] ep  28 train 61.276 val MAE 67.432 RMSE 113.795 (7.4s) lam=0.370
+[hybrid] ep  29 train 61.007 val MAE 67.871 RMSE 114.261 (7.3s) lam=0.369
+[hybrid] ep  30 train 60.753 val MAE 67.507 RMSE 112.962 (7.3s) lam=0.368
+[hybrid] ep  31 train 60.646 val MAE 67.420 RMSE 111.840 (7.2s) lam=0.367
+[hybrid] ep  32 train 60.471 val MAE 67.591 RMSE 113.636 (7.1s) lam=0.366
+[hybrid] ep  33 train 60.570 val MAE 68.286 RMSE 112.237 (7.2s) lam=0.365
+[hybrid] ep  34 train 60.602 val MAE 67.818 RMSE 113.133 (7.3s) lam=0.364
+[hybrid] ep  35 train 60.126 val MAE 70.233 RMSE 114.629 (7.3s) lam=0.363
+[hybrid] ep  36 train 59.441 val MAE 66.651 RMSE 111.594 (7.3s) lam=0.363
+[hybrid] ep  37 train 59.219 val MAE 66.440 RMSE 112.141 (7.2s) lam=0.363
+[hybrid] ep  38 train 59.094 val MAE 67.089 RMSE 112.012 (7.3s) lam=0.362
+[hybrid] ep  39 train 59.087 val MAE 66.213 RMSE 111.744 (7.3s) lam=0.361
+[hybrid] ep  40 train 59.109 val MAE 65.955 RMSE 111.756 (7.4s) lam=0.360
+[hybrid] ep  41 train 58.931 val MAE 66.548 RMSE 112.509 (7.4s) lam=0.359
+[hybrid] ep  42 train 58.899 val MAE 66.118 RMSE 112.172 (7.3s) lam=0.358
+[hybrid] ep  43 train 58.769 val MAE 66.531 RMSE 111.759 (7.4s) lam=0.357
+[hybrid] ep  44 train 58.761 val MAE 65.977 RMSE 112.099 (7.4s) lam=0.356
+[hybrid] ep  45 train 58.375 val MAE 65.308 RMSE 110.483 (7.3s) lam=0.356
+[hybrid] ep  46 train 58.274 val MAE 65.060 RMSE 110.307 (7.3s) lam=0.356
+[hybrid] ep  47 train 58.202 val MAE 65.051 RMSE 110.493 (7.5s) lam=0.355
+[hybrid] ep  48 train 58.171 val MAE 64.941 RMSE 110.510 (7.5s) lam=0.355
+[hybrid] ep  49 train 58.103 val MAE 65.156 RMSE 110.637 (7.4s) lam=0.354
+[hybrid] ep  50 train 58.095 val MAE 64.935 RMSE 110.164 (7.4s) lam=0.353
+[hybrid] DONE  val MAE 64.935 RMSE 110.164 | test MAE 78.918 RMSE 124.403 | time 366.8s
+[none_res] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
+[none_res] trainable parameters: 9604
+[none_res] ep   1 train 89.223 val MAE 61.898 RMSE 99.127 (6.8s)
+[none_res] ep   2 train 59.704 val MAE 62.079 RMSE 98.470 (6.5s)
+[none_res] ep   3 train 59.134 val MAE 61.357 RMSE 98.818 (6.6s)
+[none_res] ep   4 train 58.239 val MAE 59.257 RMSE 95.055 (6.7s)
+[none_res] ep   5 train 57.759 val MAE 62.804 RMSE 95.663 (6.8s)
+[none_res] ep   6 train 57.437 val MAE 60.030 RMSE 95.377 (6.9s)
+[none_res] ep   7 train 57.262 val MAE 58.282 RMSE 94.196 (6.9s)
+[none_res] ep   8 train 57.005 val MAE 58.576 RMSE 93.867 (6.9s)
+[none_res] ep   9 train 56.928 val MAE 58.181 RMSE 93.493 (6.9s)
+[none_res] ep  10 train 56.766 val MAE 57.547 RMSE 92.577 (6.8s)
+[none_res] ep  11 train 56.779 val MAE 58.220 RMSE 94.129 (6.8s)
+[none_res] ep  12 train 56.518 val MAE 57.787 RMSE 93.721 (6.9s)
+[none_res] ep  13 train 56.354 val MAE 58.355 RMSE 93.796 (6.8s)
+[none_res] ep  14 train 56.185 val MAE 57.232 RMSE 91.747 (6.9s)
+[none_res] ep  15 train 56.185 val MAE 59.555 RMSE 93.699 (6.9s)
+[none_res] ep  16 train 56.046 val MAE 57.726 RMSE 92.187 (6.8s)
+[none_res] ep  17 train 55.944 val MAE 57.375 RMSE 92.107 (6.9s)
+[none_res] ep  18 train 55.891 val MAE 56.497 RMSE 91.271 (6.9s)
+[none_res] ep  19 train 55.770 val MAE 57.683 RMSE 92.284 (6.8s)
+[none_res] ep  20 train 55.676 val MAE 56.680 RMSE 91.281 (6.9s)
+[none_res] ep  21 train 55.658 val MAE 56.936 RMSE 91.673 (6.9s)
+[none_res] ep  22 train 55.595 val MAE 56.361 RMSE 90.845 (6.8s)
+[none_res] ep  23 train 55.617 val MAE 56.728 RMSE 91.824 (6.9s)
+[none_res] ep  24 train 55.623 val MAE 57.641 RMSE 91.785 (6.9s)
+[none_res] ep  25 train 55.348 val MAE 56.805 RMSE 91.757 (7.0s)
+[none_res] ep  26 train 55.461 val MAE 57.021 RMSE 91.373 (6.9s)
+[none_res] ep  27 train 54.957 val MAE 56.647 RMSE 91.152 (6.8s)
+[none_res] ep  28 train 54.918 val MAE 56.012 RMSE 90.338 (6.8s)
+[none_res] ep  29 train 54.854 val MAE 55.941 RMSE 90.135 (6.8s)
+[none_res] ep  30 train 54.838 val MAE 56.405 RMSE 90.434 (6.9s)
+[none_res] ep  31 train 54.914 val MAE 56.713 RMSE 90.078 (6.9s)
+[none_res] ep  32 train 54.782 val MAE 55.989 RMSE 90.170 (6.9s)
+[none_res] ep  33 train 54.784 val MAE 56.218 RMSE 90.292 (6.9s)
+[none_res] ep  34 train 54.585 val MAE 55.916 RMSE 89.967 (6.9s)
+[none_res] ep  35 train 54.512 val MAE 56.479 RMSE 89.973 (6.9s)
+[none_res] ep  36 train 54.502 val MAE 55.963 RMSE 90.120 (6.9s)
+[none_res] ep  37 train 54.481 val MAE 55.814 RMSE 89.821 (6.8s)
+[none_res] ep  38 train 54.462 val MAE 55.845 RMSE 89.720 (7.0s)
+[none_res] ep  39 train 54.469 val MAE 55.785 RMSE 89.696 (6.9s)
+[none_res] ep  40 train 54.449 val MAE 55.773 RMSE 89.795 (6.9s)
+[none_res] ep  41 train 54.424 val MAE 56.397 RMSE 90.717 (6.9s)
+[none_res] ep  42 train 54.462 val MAE 55.956 RMSE 90.037 (7.0s)
+[none_res] ep  43 train 54.415 val MAE 56.297 RMSE 90.556 (7.2s)
+[none_res] ep  44 train 54.414 val MAE 55.736 RMSE 89.603 (7.0s)
+[none_res] ep  45 train 54.418 val MAE 56.021 RMSE 90.163 (7.1s)
+[none_res] ep  46 train 54.377 val MAE 55.981 RMSE 89.767 (7.0s)
+[none_res] ep  47 train 54.369 val MAE 56.096 RMSE 90.219 (7.0s)
+[none_res] ep  48 train 54.350 val MAE 55.652 RMSE 89.688 (7.1s)
+[none_res] ep  49 train 54.354 val MAE 56.062 RMSE 90.016 (7.0s)
+[none_res] ep  50 train 54.350 val MAE 55.654 RMSE 89.675 (7.2s)
+[none_res] DONE  val MAE 55.652 RMSE 89.688 | test MAE 64.568 RMSE 101.807 | time 345.2s
+[fixed_res] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
+[fixed_res] trainable parameters: 9604
+[fixed_res] ep   1 train 89.561 val MAE 59.600 RMSE 96.412 (6.8s)
+[fixed_res] ep   2 train 58.551 val MAE 58.207 RMSE 94.133 (6.8s)
+[fixed_res] ep   3 train 57.375 val MAE 57.578 RMSE 92.939 (6.8s)
+[fixed_res] ep   4 train 56.268 val MAE 56.858 RMSE 91.878 (7.1s)
+[fixed_res] ep   5 train 55.513 val MAE 55.798 RMSE 90.510 (7.1s)
+[fixed_res] ep   6 train 54.831 val MAE 55.648 RMSE 89.835 (7.0s)
+[fixed_res] ep   7 train 54.529 val MAE 55.074 RMSE 89.241 (7.1s)
+[fixed_res] ep   8 train 54.115 val MAE 54.947 RMSE 88.760 (7.1s)
+[fixed_res] ep   9 train 53.754 val MAE 54.360 RMSE 88.373 (7.1s)
+[fixed_res] ep  10 train 53.637 val MAE 54.908 RMSE 88.817 (7.2s)
+[fixed_res] ep  11 train 53.303 val MAE 54.741 RMSE 88.615 (7.0s)
+[fixed_res] ep  12 train 53.311 val MAE 55.565 RMSE 89.455 (7.3s)
+[fixed_res] ep  13 train 53.004 val MAE 54.122 RMSE 86.874 (7.4s)
+[fixed_res] ep  14 train 52.739 val MAE 55.309 RMSE 88.766 (7.3s)
+[fixed_res] ep  15 train 52.737 val MAE 54.535 RMSE 87.226 (7.3s)
+[fixed_res] ep  16 train 52.818 val MAE 54.369 RMSE 87.561 (7.1s)
+[fixed_res] ep  17 train 52.418 val MAE 53.273 RMSE 86.233 (7.2s)
+[fixed_res] ep  18 train 52.387 val MAE 53.306 RMSE 86.168 (7.0s)
+[fixed_res] ep  19 train 52.249 val MAE 52.940 RMSE 85.577 (7.0s)
+[fixed_res] ep  20 train 52.117 val MAE 53.915 RMSE 86.511 (7.4s)
+[fixed_res] ep  21 train 52.147 val MAE 52.451 RMSE 84.717 (7.1s)
+[fixed_res] ep  22 train 51.916 val MAE 52.580 RMSE 84.778 (7.0s)
+[fixed_res] ep  23 train 51.869 val MAE 52.985 RMSE 85.310 (7.1s)
+[fixed_res] ep  24 train 51.773 val MAE 52.985 RMSE 84.922 (7.1s)
+[fixed_res] ep  25 train 51.581 val MAE 53.748 RMSE 85.377 (7.1s)
+[fixed_res] ep  26 train 51.091 val MAE 51.871 RMSE 83.860 (7.0s)
+[fixed_res] ep  27 train 51.045 val MAE 52.513 RMSE 84.615 (7.1s)
+[fixed_res] ep  28 train 51.020 val MAE 51.895 RMSE 83.846 (7.0s)
+[fixed_res] ep  29 train 50.879 val MAE 52.134 RMSE 84.184 (7.1s)
+[fixed_res] ep  30 train 50.856 val MAE 52.004 RMSE 83.855 (7.1s)
+[fixed_res] ep  31 train 50.633 val MAE 51.628 RMSE 83.245 (7.0s)
+[fixed_res] ep  32 train 50.597 val MAE 51.584 RMSE 83.101 (7.1s)
+[fixed_res] ep  33 train 50.602 val MAE 51.570 RMSE 83.158 (7.2s)
+[fixed_res] ep  34 train 50.566 val MAE 51.531 RMSE 83.010 (7.2s)
+[fixed_res] ep  35 train 50.541 val MAE 51.919 RMSE 83.056 (7.1s)
+[fixed_res] ep  36 train 50.500 val MAE 51.607 RMSE 83.224 (7.2s)
+[fixed_res] ep  37 train 50.454 val MAE 51.560 RMSE 83.024 (7.1s)
+[fixed_res] ep  38 train 50.460 val MAE 51.480 RMSE 83.009 (7.0s)
+[fixed_res] ep  39 train 50.460 val MAE 51.712 RMSE 83.242 (7.1s)
+[fixed_res] ep  40 train 50.452 val MAE 51.458 RMSE 83.002 (7.0s)
+[fixed_res] ep  41 train 50.422 val MAE 51.488 RMSE 83.237 (7.1s)
+[fixed_res] ep  42 train 50.385 val MAE 51.417 RMSE 83.013 (7.1s)
+[fixed_res] ep  43 train 50.412 val MAE 51.406 RMSE 82.879 (7.1s)
+[fixed_res] ep  44 train 50.363 val MAE 51.286 RMSE 82.761 (7.1s)
+[fixed_res] ep  45 train 50.371 val MAE 51.414 RMSE 82.857 (7.0s)
+[fixed_res] ep  46 train 50.294 val MAE 51.305 RMSE 82.595 (7.1s)
+[fixed_res] ep  47 train 50.323 val MAE 51.429 RMSE 82.912 (7.1s)
+[fixed_res] ep  48 train 50.283 val MAE 51.308 RMSE 82.795 (7.0s)
+[fixed_res] ep  49 train 50.147 val MAE 51.296 RMSE 82.691 (7.1s)
+[fixed_res] ep  50 train 50.158 val MAE 51.302 RMSE 82.770 (7.0s)
+[fixed_res] DONE  val MAE 51.286 RMSE 82.761 | test MAE 59.796 RMSE 94.256 | time 354.5s
+[adaptive_res] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
+[adaptive_res] trainable parameters: 23924
+[adaptive_res] ep   1 train 88.611 val MAE 62.544 RMSE 98.484 (7.2s)
+[adaptive_res] ep   2 train 56.042 val MAE 55.512 RMSE 89.875 (7.0s)
+[adaptive_res] ep   3 train 53.861 val MAE 53.544 RMSE 87.695 (7.2s)
+[adaptive_res] ep   4 train 52.349 val MAE 53.014 RMSE 86.121 (7.2s)
+[adaptive_res] ep   5 train 51.278 val MAE 51.390 RMSE 83.292 (7.2s)
+[adaptive_res] ep   6 train 50.594 val MAE 50.727 RMSE 82.733 (7.4s)
+[adaptive_res] ep   7 train 50.255 val MAE 50.360 RMSE 81.788 (7.4s)
+[adaptive_res] ep   8 train 49.910 val MAE 49.916 RMSE 80.944 (7.4s)
+[adaptive_res] ep   9 train 49.549 val MAE 49.918 RMSE 81.117 (7.4s)
+[adaptive_res] ep  10 train 49.253 val MAE 49.274 RMSE 80.541 (7.4s)
+[adaptive_res] ep  11 train 49.048 val MAE 48.986 RMSE 79.749 (7.4s)
+[adaptive_res] ep  12 train 48.680 val MAE 49.008 RMSE 79.690 (7.5s)
+[adaptive_res] ep  13 train 48.571 val MAE 49.268 RMSE 79.385 (7.4s)
+[adaptive_res] ep  14 train 48.525 val MAE 48.885 RMSE 78.950 (7.5s)
+[adaptive_res] ep  15 train 48.183 val MAE 49.562 RMSE 79.352 (7.4s)
+[adaptive_res] ep  16 train 47.992 val MAE 47.908 RMSE 78.241 (7.4s)
+[adaptive_res] ep  17 train 47.883 val MAE 48.178 RMSE 78.296 (7.4s)
+[adaptive_res] ep  18 train 47.715 val MAE 49.551 RMSE 79.221 (7.4s)
+[adaptive_res] ep  19 train 47.607 val MAE 48.483 RMSE 78.495 (8.0s)
+[adaptive_res] ep  20 train 47.450 val MAE 47.391 RMSE 76.730 (7.4s)
+[adaptive_res] ep  21 train 47.374 val MAE 47.516 RMSE 77.118 (7.4s)
+[adaptive_res] ep  22 train 47.284 val MAE 48.448 RMSE 77.437 (7.3s)
+[adaptive_res] ep  23 train 47.189 val MAE 47.555 RMSE 77.426 (7.5s)
+[adaptive_res] ep  24 train 47.041 val MAE 47.381 RMSE 76.290 (7.4s)
+[adaptive_res] ep  25 train 46.903 val MAE 47.275 RMSE 76.496 (7.4s)
+[adaptive_res] ep  26 train 46.786 val MAE 50.548 RMSE 80.386 (7.4s)
+[adaptive_res] ep  27 train 46.729 val MAE 46.793 RMSE 75.578 (7.4s)
+[adaptive_res] ep  28 train 46.752 val MAE 48.779 RMSE 78.514 (7.4s)
+[adaptive_res] ep  29 train 46.541 val MAE 46.964 RMSE 75.821 (7.5s)
+[adaptive_res] ep  30 train 46.575 val MAE 47.064 RMSE 75.896 (7.4s)
+[adaptive_res] ep  31 train 46.346 val MAE 46.906 RMSE 75.418 (7.5s)
+[adaptive_res] ep  32 train 45.879 val MAE 46.425 RMSE 75.227 (7.4s)
+[adaptive_res] ep  33 train 45.834 val MAE 46.183 RMSE 74.326 (7.4s)
+[adaptive_res] ep  34 train 45.785 val MAE 45.856 RMSE 74.300 (7.4s)
+[adaptive_res] ep  35 train 45.738 val MAE 46.104 RMSE 74.425 (7.4s)
+[adaptive_res] ep  36 train 45.703 val MAE 45.971 RMSE 74.354 (7.4s)
+[adaptive_res] ep  37 train 45.626 val MAE 46.687 RMSE 75.354 (7.4s)
+[adaptive_res] ep  38 train 45.611 val MAE 46.132 RMSE 74.256 (7.6s)
+[adaptive_res] ep  39 train 45.325 val MAE 45.626 RMSE 73.933 (7.3s)
+[adaptive_res] ep  40 train 45.318 val MAE 45.421 RMSE 73.599 (7.5s)
+[adaptive_res] ep  41 train 45.291 val MAE 45.843 RMSE 74.207 (7.5s)
+[adaptive_res] ep  42 train 45.281 val MAE 45.461 RMSE 73.732 (7.4s)
+[adaptive_res] ep  43 train 45.264 val MAE 45.610 RMSE 73.947 (7.5s)
+[adaptive_res] ep  44 train 45.239 val MAE 45.668 RMSE 74.012 (7.4s)
+[adaptive_res] ep  45 train 45.123 val MAE 45.523 RMSE 73.909 (7.4s)
+[adaptive_res] ep  46 train 45.109 val MAE 45.486 RMSE 73.744 (7.5s)
+[adaptive_res] ep  47 train 45.079 val MAE 45.489 RMSE 73.624 (7.5s)
+[adaptive_res] ep  48 train 45.088 val MAE 45.527 RMSE 73.741 (7.5s)
+[adaptive_res] early stop at epoch 48
+[adaptive_res] DONE  val MAE 45.421 RMSE 73.599 | test MAE 54.159 RMSE 86.232 | time 355.7s
+[hybrid_res] windows: {'train': 35125, 'val': 8629, 'test': 26389}  mean=607.39 std=483.77
+[hybrid_res] trainable parameters: 23925
+[hybrid_res] ep   1 train 89.027 val MAE 59.809 RMSE 95.540 (7.3s) lam=0.468
+[hybrid_res] ep   2 train 56.394 val MAE 57.147 RMSE 90.996 (7.1s) lam=0.360
+[hybrid_res] ep   3 train 54.209 val MAE 53.818 RMSE 87.384 (7.3s) lam=0.260
+[hybrid_res] ep   4 train 52.730 val MAE 52.127 RMSE 85.387 (7.3s) lam=0.191
+[hybrid_res] ep   5 train 51.557 val MAE 51.841 RMSE 83.795 (7.4s) lam=0.147
+[hybrid_res] ep   6 train 50.790 val MAE 51.536 RMSE 83.065 (7.4s) lam=0.116
+[hybrid_res] ep   7 train 50.246 val MAE 50.016 RMSE 81.481 (7.4s) lam=0.095
+[hybrid_res] ep   8 train 49.982 val MAE 50.785 RMSE 82.362 (7.5s) lam=0.079
+[hybrid_res] ep   9 train 49.512 val MAE 49.791 RMSE 80.690 (7.5s) lam=0.067
+[hybrid_res] ep  10 train 49.050 val MAE 50.364 RMSE 80.760 (7.9s) lam=0.057
+[hybrid_res] ep  11 train 48.833 val MAE 49.401 RMSE 79.717 (7.5s) lam=0.050
+[hybrid_res] ep  12 train 48.564 val MAE 49.477 RMSE 79.686 (7.6s) lam=0.045
+[hybrid_res] ep  13 train 48.395 val MAE 49.063 RMSE 79.357 (7.5s) lam=0.041
+[hybrid_res] ep  14 train 48.105 val MAE 49.464 RMSE 79.543 (7.5s) lam=0.038
+[hybrid_res] ep  15 train 47.940 val MAE 49.033 RMSE 78.662 (7.5s) lam=0.036
+[hybrid_res] ep  16 train 47.861 val MAE 47.935 RMSE 77.725 (7.5s) lam=0.035
+[hybrid_res] ep  17 train 47.813 val MAE 49.530 RMSE 79.975 (7.5s) lam=0.035
+[hybrid_res] ep  18 train 47.637 val MAE 48.892 RMSE 79.221 (7.5s) lam=0.034
+[hybrid_res] ep  19 train 47.411 val MAE 47.555 RMSE 76.921 (7.5s) lam=0.034
+[hybrid_res] ep  20 train 47.282 val MAE 47.562 RMSE 77.487 (7.5s) lam=0.034
+[hybrid_res] ep  21 train 47.247 val MAE 47.556 RMSE 77.301 (7.4s) lam=0.034
+[hybrid_res] ep  22 train 47.069 val MAE 47.770 RMSE 77.439 (7.4s) lam=0.034
+[hybrid_res] ep  23 train 47.015 val MAE 47.304 RMSE 76.955 (7.5s) lam=0.034
+[hybrid_res] ep  24 train 46.899 val MAE 47.188 RMSE 76.513 (9.5s) lam=0.034
+[hybrid_res] ep  25 train 46.728 val MAE 47.235 RMSE 76.626 (8.2s) lam=0.035
+[hybrid_res] ep  26 train 46.721 val MAE 46.952 RMSE 75.962 (7.5s) lam=0.035
+[hybrid_res] ep  27 train 46.702 val MAE 46.916 RMSE 75.877 (7.3s) lam=0.035
+[hybrid_res] ep  28 train 46.615 val MAE 46.747 RMSE 75.966 (7.4s) lam=0.035
+[hybrid_res] ep  29 train 46.564 val MAE 46.637 RMSE 75.715 (7.4s) lam=0.036
+[hybrid_res] ep  30 train 46.565 val MAE 46.552 RMSE 75.500 (7.4s) lam=0.037
+[hybrid_res] ep  31 train 46.481 val MAE 47.349 RMSE 76.476 (7.3s) lam=0.037
+[hybrid_res] ep  32 train 46.322 val MAE 46.755 RMSE 75.840 (7.4s) lam=0.037
+[hybrid_res] ep  33 train 46.331 val MAE 46.369 RMSE 75.382 (7.4s) lam=0.037
+[hybrid_res] ep  34 train 46.169 val MAE 46.469 RMSE 75.086 (7.3s) lam=0.038
+[hybrid_res] ep  35 train 46.176 val MAE 46.682 RMSE 75.582 (7.5s) lam=0.037
+[hybrid_res] ep  36 train 46.014 val MAE 46.965 RMSE 75.968 (7.5s) lam=0.037
+[hybrid_res] ep  37 train 46.033 val MAE 46.097 RMSE 74.714 (7.5s) lam=0.038
+[hybrid_res] ep  38 train 45.956 val MAE 47.201 RMSE 75.025 (7.7s) lam=0.038
+[hybrid_res] ep  39 train 45.917 val MAE 47.002 RMSE 75.993 (7.5s) lam=0.038
+[hybrid_res] ep  40 train 45.989 val MAE 45.899 RMSE 74.318 (7.6s) lam=0.039
+[hybrid_res] ep  41 train 45.771 val MAE 46.373 RMSE 75.056 (7.5s) lam=0.039
+[hybrid_res] ep  42 train 45.797 val MAE 48.628 RMSE 78.471 (7.7s) lam=0.039
+[hybrid_res] ep  43 train 45.874 val MAE 46.310 RMSE 74.795 (7.6s) lam=0.039
+[hybrid_res] ep  44 train 45.664 val MAE 46.198 RMSE 74.787 (7.6s) lam=0.039
+[hybrid_res] ep  45 train 45.242 val MAE 45.776 RMSE 73.959 (7.5s) lam=0.038
+[hybrid_res] ep  46 train 45.239 val MAE 46.690 RMSE 75.593 (7.5s) lam=0.038
+[hybrid_res] ep  47 train 45.217 val MAE 45.782 RMSE 74.292 (7.5s) lam=0.038
+[hybrid_res] ep  48 train 45.136 val MAE 45.673 RMSE 74.162 (7.4s) lam=0.038
+[hybrid_res] ep  49 train 45.134 val MAE 45.925 RMSE 74.309 (7.5s) lam=0.038
+[hybrid_res] ep  50 train 45.097 val MAE 45.769 RMSE 74.144 (7.7s) lam=0.037
+[hybrid_res] DONE  val MAE 45.673 RMSE 74.162 | test MAE 54.195 RMSE 86.306 | time 376.6s

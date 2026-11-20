@@ -149,7 +149,7 @@ $t-1$ is now at sensor $i-1$: $x_i(t-1)=x_{i-1}(t)$. Substituting,
 \]
 We need this to equal $x_{i+1}(t)$ for all inputs, so $a=0$, $b=1$, $b+c=0\Rightarrow c=-1$:
 \[
-\boxed{a=0,\ b=1,\ c=-1:\quad \hat x_i(t+1)=x_{i-1}(t)+x_{i+1}(t)-x_i(t-1)=x_{i-1}(t)+x_{i+1}(t)-x_{i-1}(t)=x_{i+1}(t).}
+\boxed{a=0,\ b=1,\ c=-1}:\quad \hat x_i(t+1)=x_{i-1}(t)+x_{i+1}(t)-x_i(t-1)=x_{i-1}(t)+x_{i+1}(t)-x_{i-1}(t)=x_{i+1}(t).
 \]
 The previous snapshot tells the model which neighbour carries ``old'' information; subtracting it
 cancels the behind-neighbour, leaving the ahead-neighbour.
