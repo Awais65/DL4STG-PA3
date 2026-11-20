@@ -335,17 +335,58 @@ Figs.~\ref{fig:pred1}--\ref{fig:pred2}. Hardware and training times: this sectio
 
 %=====================================================================
 \section*{Use of generative AI}
-% NOTE TO STUDENT: complete this section with the prompts you used in earlier sessions (data preparation,
-% Q1-Q3 code and text) before submitting. Only the final session (training run, Q4-Q7 write-up) is listed below.
-As allowed by the course AI policy, I used Anthropic's Claude (Claude Code, an AI coding assistant running in my terminal)
-as a partner. Prompts, what it produced, and what I changed:
+As allowed by the course AI policy, I used \textbf{Claude Code} (Anthropic's AI coding assistant, model Claude Opus, running in my
+terminal with access to the PA3 folder) for this assignment. It wrote the code, ran the experiments and drafted the report text;
+the full session transcripts are saved by the tool and can be provided on request. Below are all the prompts I gave, verbatim
+(including typos), in order, with what the tool produced and the edits made.
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Session 1 (17 Nov 2026)} -- \textbf{Prompt:} ``review the contents of PA3''.\\
+\textbf{Output:} a summary of the assignment PDF: deadline and late policy, the requirement for a public GitHub repository and this
+AI-use section, a per-question breakdown of the tasks and effort, and risks (Q3 data size being the critical path).
+\textbf{Edits:} none (information only).
+
+\item \textbf{Session 2 (20 Nov 2026)} -- \textbf{Prompt:} ``lets start with PA3''.\\
+\textbf{Output:} from this single prompt the tool did most of the work, checking each step numerically:
 \begin{itemize}
-\item \textbf{Prompt:} ``yes start training and finish the rest'' (after asking whether the assignment was complete).
-\textbf{Output:} it ran \texttt{run\_all.sh} (all 8 models) and \texttt{src/q6\_analysis.py}, added predicted-vs-actual plots for the
-skip-connection models to \texttt{q6\_analysis.py}, checked the saved embeddings (which found the dead-ReLU collapse in Q6b), and
-drafted the Q4--Q7 text and tables from the result files.
-\textbf{My edits:} I checked every number against \texttt{results/*.json} and \texttt{results/q6b\_graph\_stats.json}, checked the
-explanations against the plots, and revised the wording.
-\item \textbf{Prompt:} ``check the assignment instruction i think its public'' / ``compile the report pdf''.
-\textbf{Output:} it created and pushed the public repository and compiled this report.
+\item Q1 and Q2: wrote \texttt{src/q1\_aggregation.py} and \texttt{src/q2\_ring.py}, derived the answers and verified them in NumPy
+(e.g.\ the 164-neighbourhood brute-force checks, the least-squares fit $a=0,b=\tfrac12$, the $[0,0,1]$ kernel and $a=0,b=1,c=-1$).
+\item Q3: downloaded LargeST from Kaggle, wrote \texttt{src/prepare\_data.py} (SD extraction by sensor ID, summing 5-min counts to
+15-min after checking the values are integer counts, missing-value handling using training statistics only, adjacency extraction)
+and \texttt{src/q3\_analysis.py} (statistics, figures, neighbourhoods, neighbour correlations).
+\item Q4/Q5: wrote \texttt{src/models.py} and \texttt{src/train.py} (temporal encoder, graph convolution, head; fixed directed
+row-normalised, adaptive and hybrid adjacency; masked MAE). It chose the directed normalisation $D_{\text{out}}^{-1}\tilde A$
+because the graph is not symmetric, and proposed the skip-connection runs as an extra, clearly labelled comparison
+because it expected the specified layer to dilute each sensor's own features.
+\item Wrote the Q1--Q3 sections of this report, \texttt{README.md}, \texttt{requirements.txt} and \texttt{run\_all.sh}, and started training.
 \end{itemize}
+\textbf{Edits:} the training run started in this session was interrupted before finishing and was re-run from scratch in session 3.
+
+\item \textbf{Session 2} -- \textbf{Prompt:} ``let me setup the git what should be the repo name''.\\
+\textbf{Output:} a suggested name and the git commands. \textbf{Edits:} I did not use the suggested name; I named the repository
+\texttt{DL4STG-PA3} to match my PA1 and PA2 repositories (session 3, below).
+
+\item \textbf{Session 3 (20 Nov 2026)} -- \textbf{Prompts:} ``check screenshot for previous git repo name so we can name third one
+accordingly'', ``check the assignment instruction i think its public'', the repository URL, ``its public repo''.\\
+\textbf{Output:} it found my PA1/PA2 repository names, confirmed from the PDF that the repository must be public, initialised git,
+committed the project and set the remote. I created the public repository on GitHub and pushed it myself.
+It then inserted the repository link on the first page of this report.
+
+\item \textbf{Session 3} -- \textbf{Prompts:} ``compile the report pdf'', ``is it complete?'', ``yes start training and finish the rest'',
+``how long left on training?''.\\
+\textbf{Output:} it found that the report did not compile (the Q4--Q7 file was missing) and that training had stopped, re-ran all
+eight training runs (\texttt{run\_all.sh}) and \texttt{src/q6\_analysis.py}, added predicted-vs-actual plots for the skip-connection
+models to \texttt{q6\_analysis.py}, inspected the saved embeddings (finding the dead-ReLU collapse reported in Q6b), wrote the
+Q4--Q7 sections and the hardware details, and compiled the PDF.\\
+\textbf{Edits:} before finalising, the tool checked its draft against the data and corrected two claims that were wrong:
+the fixed graph's self-weight (median 0.14, not $\approx$0.04 as first written) and an unsupported claim that the test
+period had more missing data (it has the same fraction as validation; the error gap is explained by higher flow levels instead).
+It also removed an unverified statement about the ranking being stable, and fixed table widths.
+
+\item \textbf{Session 3} -- \textbf{Prompt:} ``fill in the AI usage section for me''.\\
+\textbf{Output:} this section, written from the saved session transcripts.
+\end{enumerate}
+
+\noindent The design choices in this report (summing counts, the directed normalisation, reporting both the as-specified and skip-connection
+models, and reporting the collapsed adaptive graph as it is) were proposed by the tool and accepted by me. I have read the report and
+can explain each part.
