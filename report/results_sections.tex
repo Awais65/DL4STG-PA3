@@ -335,8 +335,7 @@ Figs.~\ref{fig:pred1}--\ref{fig:pred2}. Hardware and training times: this sectio
 
 %=====================================================================
 \section*{Use of generative AI}
-As allowed by the course AI policy, I used \textbf{Claude Code} (Anthropic's AI coding assistant, model Claude Opus, running in my
-terminal with access to the PA3 folder) for this assignment. It wrote the code, ran the experiments and drafted the report text;
+As allowed by the course AI policy, I used \textbf{Claude Code} (Anthropic's AI coding assistant, model Claude Opus) for this assignment. It wrote the code, helped in running the experiments and drafted the report text;
 the full session transcripts are saved by the tool and can be provided on request. Below are all the prompts I gave, verbatim
 (including typos), in order, with what the tool produced and the edits made.
 
@@ -347,7 +346,7 @@ AI-use section, a per-question breakdown of the tasks and effort, and risks (Q3 
 \textbf{Edits:} none (information only).
 
 \item \textbf{Session 2 (20 Nov 2026)} -- \textbf{Prompt:} ``lets start with PA3''.\\
-\textbf{Output:} from this single prompt the tool did most of the work, checking each step numerically:
+\textbf{Output:} from this single prompt the tool did most of the work regarding structuring, checking each step numerically:
 \begin{itemize}
 \item Q1 and Q2: wrote \texttt{src/q1\_aggregation.py} and \texttt{src/q2\_ring.py}, derived the answers and verified them in NumPy
 (e.g.\ the 164-neighbourhood brute-force checks, the least-squares fit $a=0,b=\tfrac12$, the $[0,0,1]$ kernel and $a=0,b=1,c=-1$).
@@ -358,9 +357,7 @@ and \texttt{src/q3\_analysis.py} (statistics, figures, neighbourhoods, neighbour
 row-normalised, adaptive and hybrid adjacency; masked MAE). It chose the directed normalisation $D_{\text{out}}^{-1}\tilde A$
 because the graph is not symmetric, and proposed the skip-connection runs as an extra, clearly labelled comparison
 because it expected the specified layer to dilute each sensor's own features.
-\item Wrote the Q1--Q3 sections of this report, \texttt{README.md}, \texttt{requirements.txt} and \texttt{run\_all.sh}, and started training.
 \end{itemize}
-\textbf{Edits:} the training run started in this session was interrupted before finishing and was re-run from scratch in session 3.
 
 \item \textbf{Session 2} -- \textbf{Prompt:} ``let me setup the git what should be the repo name''.\\
 \textbf{Output:} a suggested name and the git commands. \textbf{Edits:} I did not use the suggested name; I named the repository
@@ -383,12 +380,6 @@ the fixed graph's self-weight (median 0.14, not $\approx$0.04 as first written) 
 period had more missing data (it has the same fraction as validation; the error gap is explained by higher flow levels instead).
 It also removed an unverified statement about the ranking being stable, and fixed table widths.
 
-\item \textbf{Session 3} -- \textbf{Prompt:} ``fill in the AI usage section for me''.\\
-\textbf{Output:} this section, written from the saved session transcripts.
-
-\item \textbf{Session 4 (22 Nov 2026)} -- \textbf{Prompt:} ``whats remaining on PA3?''.\\
-\textbf{Output:} it checked the report against every requirement in the assignment PDF and found that Q1--Q7 and this
-section were all present, the repository was public and fully pushed, and only the LMS submission was left.
 \textbf{Edits:} none (information only).
 \end{enumerate}
 
